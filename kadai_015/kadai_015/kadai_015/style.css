@@ -1,0 +1,49 @@
+/* フォントの種類とベース設定 */
+body {
+  font-family: "Arial", "Meiryo", sans-serif;
+  text-align: center;
+  font-size: 20px;
+}
+
+/* h1（MY PROFILE）の装飾 */
+h1 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 2em; /* ルート要素の2倍 */
+  letter-spacing: 1.2em; /* 文字の大きさに対して1.2倍の間隔 */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* 適度な影 */
+  border-bottom: 3px solid rgb(115, 115, 114); /* 下線 */
+  display: inline-block; /* 下線の長さを文字に合わせる */
+  padding-bottom: 10px;
+}
+
+/* 色の共通クラス */
+.blue {
+  color: skyblue;
+  font-weight: bold;
+}
+
+.pink {
+  color: rgb(255, 192, 203);
+  font-weight: bold;
+}
+
+/* 「名前」「血液型」「好きな食べ物」→ ピンク */
+h2.pink {
+  color: rgb(255, 192, 203);
+  font-weight: bold;
+}
+
+/* 「生年月日」「趣味」「理由」→ スカイブルー */
+h2.blue {
+  color: skyblue;
+  font-weight: bold;
+}
+
+/* #basic 内の特定pを太字 */
+#basic p {
+  font-weight: normal; /* 初期化 */
+}
+
+#basic p strong {
+  font-weight: bold; /* 太字にする */
+}
